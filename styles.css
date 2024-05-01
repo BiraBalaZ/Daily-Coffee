@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Qwitcher+Grypen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap');
+
+/* Colors Coffee Pallete
+#4B2D21
+#9B725B
+#765F57
+#151214
+#513D36
+
+DAILY COFFEE
+--bistre: #3B2621ff;
+--platinum: #E7E2E1ff;
+--tan: #E0BA96ff;
+--beaver: #A98875ff;
+--chamoisee: #9B7760ff;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Neuton', serif;
+    font-weight: 400;
+}
+
+body {
+    background-color: #765F57;
+    color: var(--platinum);
+    position: relative; /* Adicionando posição relativa para que o rodapé absoluto funcione corretamente */
+    min-height: 100vh; /* Definindo a altura mínima do corpo como 100% da altura da janela de visualização */
+}
+
+a {
+    text-decoration: none;
+    color: var(--platinum);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+button {
+    border: none; /* Removendo a borda */
+    background: none; /* Removendo o fundo */
+    padding: 0; /* Removendo o preenchimento */
+}
+
+.btn {
+    background-color: #9B725B;
+    border-radius: 5px; /* Corrigido para definir o raio de borda em pixels */
+    padding: 10px 20px; /* Adicionando preenchimento ao botão */
+    color: #151214; /* Definindo a cor do texto como branco */
+    text-decoration: none; /* Removendo sublinhado do link */
+    display: inline-block; /* Permitindo que o botão ocupe apenas o espaço necessário */
+    transition: 0.3s ease; /* Adicionando transição suave */
+    outline: none; /* Removendo o contorno ao focar */
+}
+
+.btn:hover {
+    background-color: #4B2D21;
+}
+
+header::before {
+    content: "";
+    background-image: url('./assets/images/image001.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    filter: blur(5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+header {
+    position: relative;
+    background-color: var(--beaver);
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 50px; /* Adiciona espaço entre o cabeçalho e a imagem */
+}
+
+header .logo {
+    max-width: 25%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+    border-radius: 85%;
+    box-shadow: 0px 0px 40px 40px #3d260b7e;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 40px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #e7e2e1;
+    font-family: 'Qwitcher Grypen', sans-serif;
+    font-weight: 400;
+}
+
+section#destaque {
+    background-color: var(--chamoisee);
+    padding: 100px 0;
+    text-align: center;
+}
+
+hr {
+    border-color: #513D36;
+}
+
+section#destaque h2 {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 48px;
+    color: var(--platinum);
+    margin-bottom: 20px;
+}
+
+section#destaque p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.marketing-text {
+    font-size: 30px;
+    color: #151214;
+    text-align: center;
+}
+
+.marketing-items {
+    display: flex;
+    justify-content: center; /* Centraliza os contêineres */
+}
+
+.items {
+    margin: 0 20px; /* Adiciona espaçamento horizontal entre os itens */
+}
+
+.img {
+    border-radius: 10%; /* Adiciona o mesmo arredondamento aos itens */
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #513d36b2;
+    text-align: center;
+    padding: 20px 0;
+}
