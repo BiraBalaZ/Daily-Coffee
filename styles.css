@@ -8,13 +8,6 @@
 #765F57
 #151214
 #513D36
-
-DAILY COFFEE
---bistre: #3B2621ff;
---platinum: #E7E2E1ff;
---tan: #E0BA96ff;
---beaver: #A98875ff;
---chamoisee: #9B7760ff;
 */
 
 * {
@@ -26,30 +19,46 @@ DAILY COFFEE
 html {
     font-family: 'Neuton', serif;
     font-weight: 400;
+    scroll-behavior: smooth;
+    /* transition: s; */
 }
 
 body {
     background-color: #765F57;
-    color: var(--platinum);
-    position: relative; /* Adicionando posição relativa para que o rodapé absoluto funcione corretamente */
-    min-height: 100vh; /* Definindo a altura mínima do corpo como 100% da altura da janela de visualização */
+}
+
+main {
+    max-width: 650px;
+    margin: 0 auto;
 }
 
 a {
     text-decoration: none;
-    color: var(--platinum);
+    color: black;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+    border-color: #513D36;
 }
 
 button {
     border: none; /* Removendo a borda */
     background: none; /* Removendo o fundo */
     padding: 0; /* Removendo o preenchimento */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .btn {
@@ -65,6 +74,14 @@ button {
 
 .btn:hover {
     background-color: #4B2D21;
+    color: #9B725B;
+}
+
+header {
+    position: relative;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 165px;
 }
 
 header::before {
@@ -80,14 +97,6 @@ header::before {
     width: 100%;
     height: 100%;
     z-index: -1;
-}
-
-header {
-    position: relative;
-    background-color: var(--beaver);
-    padding: 20px 0;
-    text-align: center;
-    margin-bottom: 165px;
 }
 
 header .logo {
@@ -123,19 +132,13 @@ nav ul li a {
 }
 
 section#destaque {
-    background-color: var(--chamoisee);
     padding: 50px 0;
     text-align: center;
-}
-
-hr {
-    border-color: #513D36;
 }
 
 section#destaque h2 {
     font-family: 'Nanum Myeongjo', serif;
     font-size: 48px;
-    color: var(--platinum);
     margin-bottom: 20px;
 }
 
@@ -188,10 +191,8 @@ section#contato li {
 }
 
 footer {
-    bottom: 0;
-    width: 100%;
     background-color: #513d36b2;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 25px;
+    margin-top: 20px;
+    padding: 10px;
 }
