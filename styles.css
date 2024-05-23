@@ -87,7 +87,7 @@ header {
     background-color: var(--beaver);
     padding: 20px 0;
     text-align: center;
-    margin-bottom: 50px; /* Adiciona espaço entre o cabeçalho e a imagem */
+    margin-bottom: 165px;
 }
 
 header .logo {
@@ -109,7 +109,7 @@ nav ul {
 nav ul li {
     display: inline;
     margin-right: 20px;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 nav ul li:last-child {
@@ -124,7 +124,7 @@ nav ul li a {
 
 section#destaque {
     background-color: var(--chamoisee);
-    padding: 100px 0;
+    padding: 50px 0;
     text-align: center;
 }
 
@@ -145,32 +145,53 @@ section#destaque p {
     margin-bottom: 30px;
 }
 
+section#sobre {
+    margin-top: 20px;
+}
+
+section#contato {
+    margin-bottom: 20px;
+}
+
+section#contato ul {
+    margin-top: 20px;
+    list-style: none;
+    columns: 2;
+    display: inline-block;
+}
+
+section#contato li {
+    margin-right: 20px;
+}
+
 .marketing-text {
     font-size: 30px;
     color: #151214;
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .marketing-items {
-    justify-content: center; /* Centraliza os contêineres */
+    justify-content: center;
     text-align: center;
 }
 
 .items {
     display: inline-block;
-    margin: 0 20px; /* Adiciona espaçamento horizontal entre os itens */
+    margin: 0 20px;
     margin-bottom: 25px;
 }
 
 .img {
-    border-radius: 10%; /* Adiciona o mesmo arredondamento aos itens */
+    border-radius: 10%;
 }
 
 footer {
-    position: absolute;
     bottom: 0;
     width: 100%;
     background-color: #513d36b2;
     text-align: center;
     padding: 20px 0;
+    margin-top: 25px;
 }
